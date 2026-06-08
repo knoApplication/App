@@ -76,8 +76,9 @@ header{
     font-size:2rem;
     font-weight:700;
     background:linear-gradient(90deg,#60a5fa,#8b5cf6);
+    background-clip:text;
     -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    color:transparent;
 }
 
 .hero{
@@ -101,8 +102,9 @@ header{
 
 .text span{
     background:linear-gradient(90deg,#60a5fa,#8b5cf6);
+    background-clip:text;
     -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    color:transparent;
 }
 
 .text p{
@@ -303,15 +305,10 @@ footer{
 
 <script>
 
-const downloadURL =
-"https://drive.google.com/drive/folders/193GSKUGdGS_8M5L92dz0yyfjBurQxIZu?usp=drive_link";
+const downloadURL = "https://drive.google.com/drive/folders/193GSKUGdGS_8M5L92dz0yyfjBurQxIZu?usp=drive_link";
 
-document
-.getElementById("downloadBtn")
-.addEventListener("click", () => {
-
+document.getElementById("downloadBtn").addEventListener("click", function() {
     window.open(downloadURL, "_blank");
-
 });
 
 </script>
